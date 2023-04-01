@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hibernate-configuration>
+<session-factory>
+<property name="dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
+<property name="connection.Driver_class">com.mysql.jdbc.Driver</property>
+<property name="connection.url">jdbc:mysql://localhost:3306/student</property>
+<property name="connection.username">root</property>
+<property name="connection.password">madhu123</property> 
+<property name="connection.pool_size">2</property>
+<property name="hbm2ddl.auto">update</property>
+<property name="show_sql">true</property>
+<!-- -login the sql windows -->
+<mapping class="com.techpalle.model.Student"/>
+</session-factory>
+</hibernate-configuration>
